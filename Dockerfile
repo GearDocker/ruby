@@ -14,6 +14,9 @@ RUN (apt-get -y update; \
      make install; \
      echo "gem: --no-ri --no-rdoc" >> ~/.gemrc; \
      gem install bundler; \
-     rm -rf /var/lib/apt/lists/*; \
+     rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*; \
+     rm -rf /usr/local/lib/ruby/gems/2.2.0/cache/*; \
      rm -rf /var/tmp/*)
+
+
 

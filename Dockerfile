@@ -11,7 +11,7 @@ RUN (apt-get -y update; \
      cd ruby-2.2.0; \
      ./configure; \
      make; \
-     make install; 
+     make install; \
      echo "gem: --no-ri --no-rdoc" >> ~/.gemrc; \
      gem install bundler; \
      rm -rf /var/lib/apt/lists/*; \

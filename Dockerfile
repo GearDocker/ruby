@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:14.04
 MAINTAINER Gary Leong <gwleong@gmail.com>
 
 RUN (apt-get -y update; \
